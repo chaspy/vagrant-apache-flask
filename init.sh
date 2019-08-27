@@ -3,6 +3,8 @@ sudo yum update -y
 sudo yum install -y httpd
 sudo yum install -y mod_wsgi
 
+setenforce 0
+
 # Locale
 grep 'LC_ALL="ja_JP.utf8"' /home/vagrant/.bash_profile || echo 'LC_ALL="ja_JP.utf8"' >> /home/vagrant/.bash_profile
 export LC_ALL="ja_JP.utf8"
