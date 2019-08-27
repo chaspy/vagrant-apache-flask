@@ -18,5 +18,7 @@ scl enable rh-python36 bash
 pip install --upgrade pip
 pip3 install flask
 
+env FLASK_APP=/vagrant/hello.py flask run  --host=0.0.0.0
+
 sudo service httpd enable
 sudo service httpd start
