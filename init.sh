@@ -2,6 +2,10 @@
 sudo yum update -y
 sudo yum install -y httpd
 
+# Locale
+grep 'LC_ALL="ja_JP.utf8"' ~/.bash_profile || echo 'LC_ALL="ja_JP.utf8"' >> ~/.bash_profile
+export LC_ALL="ja_JP.utf8"
+
 # Python
 sudo yum install -y centos-release-scl
 sudo yum install -y rh-python36
