@@ -17,3 +17,6 @@ scl enable rh-python36 bash
 # flask
 pip install --upgrade pip
 pip3 install flask
+
+sudo service httpd enable
+sudo service httpd start
