@@ -21,6 +21,10 @@ source /home/vagrant/.venv/bin/activate
 # flask
 pip install --upgrade pip
 pip3 install flask
+sudo cp -r /vagrant/hello /var/www/hello
+
+# mod_wsgi
+sudo cp /vagrant/10-wsgi.conf /etc/httpd/conf.modules.d/10-wsgi.conf
 
 sudo service httpd enable
 sudo service httpd start
